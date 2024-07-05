@@ -31,6 +31,13 @@ nav > span {
     border: 2px dashed black;
     display: flex;
     flex-direction: row;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 10px;
+}
+
+.upper-head {
+    padding: 15px 0;
 }
 
 nav {
@@ -42,18 +49,24 @@ nav {
 }
 
 .logo {
-    width: 25%;
-    text-align: left;
+    flex-basis: 25%;
+    align-items: center;
+    
+    
 }
 
 .link {
     width: 50%;
+    align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 .login {
     width: 25%;
+    align-items: center;
     text-align: right;
+    justify-content: flex-end;
 }
 
 .lower-head {
@@ -105,6 +118,7 @@ nav {
 
 
 /* Footer */
+
 footer {
     background-color: darkblue;
     padding: 20px;
