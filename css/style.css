@@ -108,20 +108,23 @@ nav {
 footer {
     background-color: darkblue;
     padding: 20px;
+    padding-bottom: 0;
 }
 
 .bg-foot-txt {
     width: 25%;
     background-color: coral;
+    border: 2px dashed white;
 }
 
 .parts-of-foot {
     width: 75%;
     display: flex;
 }
-.parts-of-foot .flex-container > div {
+.parts-of-foot.flex-container > *{
     flex-basis: 25%;
     background-color: red;
+    border: 2px dashed black;
 }
 
 
@@ -139,4 +142,6 @@ footer > hr {
 .footer-things {
     padding: 5px 10px;
     background-color: lightpink;
+    border: 2px dashed black;
 }
+
