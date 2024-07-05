@@ -1,3 +1,4 @@
+/* Generics */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,17 @@
     margin: 0 auto;
 }
 
+/* Utilities */
+section {
+    padding: 50px 0;
+}
+
+.flex-container {
+    height: 400px;
+    display: flex;
+}
+
+/* header style */
 
 header {
     height: 400px;
@@ -25,6 +37,7 @@ nav {
 
     background-color: goldenrod;
     height: 100px;
+    display: flex;
    
 }
 
@@ -59,16 +72,7 @@ nav {
     border-radius: 10px;
 }
 
-
-
-section {
-    padding: 50px 0;
-}
-
-.flex-container {
-    height: 400px;
-    display: flex;
-}
+/* Style of the Main part */
 
 .big-content {
     width: 70%;    
@@ -99,3 +103,40 @@ section {
     height: 800px;
 }
 
+
+/* Footer */
+footer {
+    background-color: darkblue;
+    padding: 20px;
+}
+
+.bg-foot-txt {
+    width: 25%;
+    background-color: coral;
+}
+
+.parts-of-foot {
+    width: 75%;
+    display: flex;
+}
+.parts-of-foot .flex-container > div {
+    flex-basis: 25%;
+    background-color: red;
+}
+
+
+footer > hr {
+    margin: 20px 0;
+}
+
+.flex-container.footer-end {
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.footer-things {
+    padding: 5px 10px;
+    background-color: lightpink;
+}
