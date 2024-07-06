@@ -1,0 +1,201 @@
+/* Generics */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Customs Proprierties */
+
+
+:root {
+    --border: 2px dashed black;
+}
+
+:root {
+    --inter-padding: 30px;
+}
+
+:root {
+    --margin-end: 25px;
+}
+
+/* Utilities */
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+
+
+/* Header */
+/* Upper-head style*/
+
+
+.upper-head {
+    background-color: lightskyblue;
+    height: 80px;
+}
+
+nav.flex-container {
+    align-items: center;
+    height: 80px;
+}
+
+nav > span {
+    background-color: goldenrod;
+    border: var(--border);
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.side-nav {
+    flex-basis: 25%;
+}
+
+.main-nav {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.login {
+    text-align: right;
+}
+
+/* Lowee-head style */
+
+.lower-head {
+    /* min-height: 300px;*/
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.lower-head > div {
+    height: 300px; /* punto di domanda: se metto height in % non lo prende, anche se il padre ha height fissa */
+    width: 800px;
+    background-color: pink;
+    border: var(--border);
+    border-radius: 10px;
+}
+
+
+
+/* Main style */
+
+/* Utilities for Main */
+
+section {
+    padding: 35px 0;
+}
+
+/* sections with reversed row */
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.odd {
+    background-color: lightgrey;
+}
+
+/* Style for the content parts */
+
+.bg-content {
+    flex-basis: 60%;
+    background-color: lightgreen;
+    border: var(--border);
+}
+
+.sm-content {
+    flex-basis: 40%;
+    background-color: red;
+    border: var(--border);
+}
+
+.bg-content, .sm-content {
+    padding: var(--inter-padding);
+}
+
+.container.flex-container > div {
+    min-height: 400px;
+    font-weight: bold;
+    /* font-family: sans-serif; */
+}
+
+/* style for the last section of main */
+
+.last-section > * {
+    min-height: 800px;
+    background-color: green;
+    border: var(--border);
+    padding: var(--inter-padding);
+    /* font-family: sans-serif; */
+}
+
+
+
+/* Style for Footer elements */
+
+footer {
+    background-color: darkblue;
+    padding-top: 15px;
+}
+
+/* First part of the footer */
+
+.info-box {
+    min-height: 600px;
+    margin-bottom: var(--margin-end);
+}
+
+.left-info {
+    flex-basis: 25%;
+    background-color: coral;
+    border: var(--border);
+    border-radius: 15px 0 0 15px;
+}
+
+.right-info {
+    flex-basis: 75%;
+}
+
+.right-item {
+    flex-basis: 25%;
+    background-color: aqua;
+    border: var(--border);
+    border-color: white;
+}
+
+.right-item:last-child {
+    border-radius: 0 15px 15px 0;
+}
+
+/* End of the footer */
+
+.end {
+    min-height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightskyblue;
+    margin-top: var(--margin-end);
+}
+
+.end > span {
+    background-color: pink;
+    padding: 5px 10px;
+    border: var(--border);
+    font-size: 20px;
+    font-weight: 500;
+}
